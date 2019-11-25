@@ -18,6 +18,7 @@ private:
     int time;
     void printParam();
     void readLines();
+    int stringToInt(std::string str);
 
 public:
     CalcNewValues();

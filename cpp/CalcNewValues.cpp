@@ -28,8 +28,7 @@ void CalcNewValues::printParam() {
 void CalcNewValues::readLines() {
     std::string inputLine;
 
-    while (std::getline(std::cin, inputLine) && altitude) {
-        std::cout << inputLine << std::endl;
+    do {
         if (!inputLine.rfind('#', 0)) {
             //This is a status line of text, and
             //should be passed down the pipeline
@@ -56,10 +55,10 @@ void CalcNewValues::readLines() {
                         std::cout << "#You have crashed." << std::endl;
                     }
                 }
+                printParam();
             }
         }
-        printParam();
-    }
+    } while (std::getline(std::cin, inputLine) && altitude);
 }
 
 int CalcNewValues::stringToInt(std::string str) {
