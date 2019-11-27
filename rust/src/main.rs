@@ -13,6 +13,7 @@ fn main() {
                     //should be passed down the pipeline with
                     //the pound-sign stripped off
                     input.remove(0);
+                    print!("{}", input);
                 } else if input.chars().next().unwrap() == '%' {
                     //This is a value to display
                     if input.len() > 1 {
