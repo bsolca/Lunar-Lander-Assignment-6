@@ -10,4 +10,4 @@ By default:
 CalcNewValues is written in CPP
 DisplayValues in Rust
 
-> 
+![Demo](exe/video.gif)
